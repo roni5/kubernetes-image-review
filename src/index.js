@@ -4,7 +4,7 @@ import SNSEvent from './sns';
 const response = process.env.RESPONSE || 'config/responses.yml';
 const images = process.env.IMAGES || 'config/images.yml';
 
-export function analyze(event, context, callback) {
+export function handler(event, context, callback) {
   let submission;
 
   try {
