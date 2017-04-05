@@ -12,3 +12,6 @@ cache:
 
 before_script:
   - npm run lint
+
+script:
+  - npm test
