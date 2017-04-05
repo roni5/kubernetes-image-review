@@ -1,0 +1,36 @@
+{
+  "name": "kubernetes-image-review",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "author": "Jason Riddle <jallriddle@gmail.com>",
+  "homepage": "https://github.com/jason-riddle/kubernetes-image-review#readme",
+  "description": "NodeJS Image Review for Kubernetes",
+  "bugs": {
+    "url": "https://github.com/jason-riddle/kubernetes-image-review/issues"
+  },
+  "keywords": [
+    "kubernetes"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "check-node-version": "^2.0.1",
+    "eslint": "^3.19.0",
+    "lebab": "^2.7.2",
+    "mocha": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jason-riddle/kubernetes-image-review.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "install": "check-node-version --package",
+    "lebab": "lebab src/ --transform arrow",
+    "lint": "eslint src/ test/ *.js",
+    "test": "mocha \"test/**/*Test.js\"",
+    "watch": "mocha --watch \"test/**/*Test.js\""
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}

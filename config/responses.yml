@@ -1,0 +1,10 @@
+approved:
+  kind: ImageReview
+  status:
+    allowed: 'true'
+
+disapproved:
+  kind: ImageReview
+  status:
+    allowed: 'false'
+    reason: 'Please email so-and-so@gmail.com for info.'
